@@ -36,4 +36,29 @@ turnGreen is a...
 	e  
 	e.preventDefault
 	e.target
+	ready
+
+	e.target
+		within in the context of jQuery...
+		 (e.target --> this)
+		outside of jQuery
+			USE this
+	e.preventDefault() --> return false 
+
+	NATIVE
+	e.target
+	e.preventDefault()
+
+	jQuery (Cross-browser compatible)
+	this
+	return false
+
+	If you're e.preventDefault isn't working, test with this...
+		console.log($('h1').length);
+			CDT would load 0
+
+	$(document).on('ready', init);
+		You would place all of your code within an anonymous function with this at the top of your main.js file.  
+	
+
 
